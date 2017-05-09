@@ -1,0 +1,423 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+
+.page {
+    display: flex;
+    max-width: 100%;
+		height: 200px;
+		position: absolute
+
+}
+
+
+
+h1 {
+    font-family: "Press Start 2P";
+    font-size: 5em;
+    color: black;
+  -webkit-text-stroke: 0.2px rgb(94, 212, 216);
+  text-shadow:
+      3px 3px 0 #000,
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000;
+    animation: text-flicker 2s infinite  ;
+
+}
+
+@keyframes text-flicker {
+  2% {
+    color: black;
+    text-shadow: 0 0 15px rgb(230, 0, 120);
+  }
+  3% {
+    color: rgba(103, 58, 217, .5);
+    text-shadow: none;
+  }
+  6% {
+    color: rgb(94, 212, 216);
+    text-shadow: 0 0 15px rgb(230, 0, 120);
+  }
+  9% {
+    color: rgba(103, 58, 217, .5);
+    text-shadow: none;
+  }
+  11% {
+    color: rgb(94, 212, 216);
+    text-shadow: 0 0 15px rgb(230, 0, 120);
+  }
+  14% {
+    color: rgba(103, 58, 217, .5);
+    text-shadow: none;
+  }
+  18% {
+    color: rgb(94, 212, 216);
+    text-shadow: 0 0 15px rgb(230, 0, 120);
+  }
+  32% {
+    color: rgb(94, 212, 216);
+    text-shadow: 0 0 15px rgb(230, 0, 120);
+  }
+  33% {
+    color: rgba(120, 0, 50, .5);
+    text-shadow: none;
+  }
+  37% {
+    color: rgb(94, 212, 216);
+    text-shadow: 0 0 15px rgb(230, 0, 120);
+  }
+  39% {
+    color: rgba(120, 0, 50, .5);
+    text-shadow: none;
+  }
+  43% {
+    color: rgb(94, 212, 216);
+    text-shadow: 0 0 15px rgb(230, 0, 120);
+  }
+  46% {
+    color: rgba(41, 0, 119 .5);
+    text-shadow: none;
+  }
+  47% {
+    color: rgb(83, 0, 119);
+    text-shadow: 0 0 15px rgb(41, 0, 119);
+  }
+  100% {
+    color: rgb(94, 212, 216);
+    text-shadow: 0 0 15px rgb(83, 0, 119);
+  }
+}
+
+h2 {
+    font-family: "Press Start 2P";
+    font-size: 2em;
+    color:rgb(217,146,58);
+
+display: flex;
+justify-content: center;
+}
+
+.instructions{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+      width: 45em;
+      height: 10em;
+
+      border-radius: 1em;
+      padding: 1.5em;
+      background: rgba(130,238,242,1);
+          background: -moz-linear-gradient(top, rgba(130,238,242,1) 35%, rgba(130,238,242,1) 37%, rgba(130,238,242,0.43) 74%, rgba(133,237,244,0.18) 90%, rgba(133,239,244,0.06) 98%, rgba(133,239,244,0.03) 100%);
+          background: -webkit-gradient(left top, left bottom, color-stop(35%, rgba(130,238,242,1)), color-stop(37%, rgba(130,238,242,1)), color-stop(74%, rgba(130,238,242,0.43)), color-stop(90%, rgba(133,237,244,0.18)), color-stop(98%, rgba(133,239,244,0.06)), color-stop(100%, rgba(133,239,244,0.03)));
+          background: -webkit-linear-gradient(top, rgba(130,238,242,1) 35%, rgba(130,238,242,1) 37%, rgba(130,238,242,0.43) 74%, rgba(133,237,244,0.18) 90%, rgba(133,239,244,0.06) 98%, rgba(133,239,244,0.03) 100%);
+          background: -o-linear-gradient(top, rgba(130,238,242,1) 35%, rgba(130,238,242,1) 37%, rgba(130,238,242,0.43) 74%, rgba(133,237,244,0.18) 90%, rgba(133,239,244,0.06) 98%, rgba(133,239,244,0.03) 100%);
+          background: -ms-linear-gradient(top, rgba(130,238,242,1) 35%, rgba(130,238,242,1) 37%, rgba(130,238,242,0.43) 74%, rgba(133,237,244,0.18) 90%, rgba(133,239,244,0.06) 98%, rgba(133,239,244,0.03) 100%);
+          background: linear-gradient(to bottom, rgba(130,238,242,1) 35%, rgba(130,238,242,1) 37%, rgba(130,238,242,0.43) 74%, rgba(133,237,244,0.18) 90%, rgba(133,239,244,0.06) 98%, rgba(133,239,244,0.03) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82eef2', endColorstr='#85eff4', GradientType=0 );
+
+  }
+
+
+
+
+
+
+
+.instructionstar {
+    font-family: "Open Sans";
+    color:black;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+.insertCoin {
+    transition-duration: 0.4s;
+    width: 20em;
+    height: 5em;
+    border: dashed;
+    border-radius: 1em;
+    border-color: rgb(94,212,216);
+    background-color: rgba(255, 255, 255, 0);
+    font-family: "Press Start 2P";
+    color: rgb(217, 146, 58);
+    display: flex;
+justify-content: center;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+/*button:hover {
+		width: 100px;
+		cursor: pointer;}*/
+
+.buttonplay:active .buttonplay:hover {
+    transition-duration: 0.3s;
+    /*outline: none;*/
+    background-color: #fee5e3;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+
+.page {
+    display: none;
+    /*width: 500px;
+		height: 200px;
+		position: absolute;*/
+    f
+    /*top: 50%;
+		left: 50%;*/
+    /*margin-top: -100px;
+		margin-left: -250px;*/
+}
+
+#page-1 {
+    display: block;
+}
+
+.used {
+    top: 20px;
+    left: 20px;
+    max-width: 20%;
+    font-family: "Press Start 2P";
+    color: rgb(217, 146, 58);
+}
+
+.response {
+    color: white;
+    font-family: "Press Start 2P";
+    color: rgb(217, 146, 58);
+}
+.tries {
+    font-family: "Press Start 2P";
+    color: rgb(217, 146, 58);
+    /*position: fixed;*/
+    top: 29px;
+    right: 29px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: dashed;
+    border-radius: 0.5em;
+    padding: 3em;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.input {
+    display: block;
+    margin: 20px auto;
+    width: 240px;
+    font-size: 1.5rem;
+    outline: none;
+    border:none;
+    border-radius: 0.5em;
+    /*border: dashed;
+    border-radius: 0.5em;*/
+    background-color: rgb(94, 212, 216);
+    color: white;
+    padding: 1em;
+}
+
+#page-2{
+
+
+}
+
+#page-3 h2 span {
+    font-size: 3.2rem;
+}
+
+.tip {
+    font-family: "Press Start 2P";
+    color: rgb(217, 146, 58);
+}
+.counter{
+  font-family: "Press Start 2P";
+  color: rgb(217, 146, 58);
+}
+
+
+
+@media all and (max-width: 1000px) {
+    .used {
+        display: none;
+    }
+}
+
+
+/*animations*/
+
+.show {
+    -webkit-animation: show 1.5s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation: show 1.5s;
+    -moz-animation-iteration-count: 1;
+    -ms-animation: show 1.5s;
+    -ms-animation-iteration-count: 1;
+    -o-animation: show 1.5s;
+    -o-animation-iteration-count: 1;
+    animation: show 1.5s;
+    animation-iteration-count: 1;
+}
+
+.hide {
+    -webkit-animation: hide 1.5s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation: hide 1.5s;
+    -moz-animation-iteration-count: 1;
+    -ms-animation: hide 1.5s;
+    -ms-animation-iteration-count: 1;
+    -o-animation: hide 1.5s;
+    -o-animation-iteration-count: 1;
+    animation: hide 1.5s;
+    animation-iteration-count: 1;
+}
+
+.alert {
+    -webkit-animation: alert 1000ms infinite;
+    -moz-animation: alert 1000ms infinite;
+    -ms-animation: alert 1000ms infinite;
+    -o-animation: alert 1000ms infinite;
+    animation: alert 1000ms infinite;
+}
+
+@-webkit-keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes hide {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes hide {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes hide {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes hide {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes hide {
+    to {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes hide {
+    to {
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes hide {
+    to {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes hide {
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes hide {
+    to {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes alert {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes alert {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes alert {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes alert {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes alert {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}

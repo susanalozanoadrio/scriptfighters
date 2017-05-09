@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Monedas</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <div id="page-1" class="page">
+    <h1>NumberOne</h1>
+      <h2>ATENTION!!</h2>
+    <div class="instructions">
+
+      <p class="instructionstar">Script Fighter has summoned all the fighters for their next combat.
+Everyone is looking forward to meeting their rival. Guess the position you are in for your next fight.
+
+ </p>
+ <p class="instructionstar">GOOD LUCK!</p>
+</div>
+
+    <img src="images/coin.gif" alt="">
+    <button class="insertCoin" data-limit="100" type="button" name="jugar">INSERT COIN</button>
+
+</div>
+  <div id="page-2" class="page">
+    <p class="used"><br><span></span></p>
+    <!-- numeros intentados -->
+    <h2>GUESS<span></span></h2>
+    <p class="tries">Tries<span>0</span></p>
+    <p class="response"></p>
+    <!-- respuesta low hight -->
+    <input type="number" class="input" name="input">
+    <button class="buttonplay">Try</button>
+  </div>
+
+  <div id="page-3" class="page">
+    <h2>CONGRATULATIONS!<br><span>YOU WIN!</span></h2>
+    <p class="counter">It only took you... <span>0</span> tries!</p>
+    <p class="tip">Not bad... but can you beat that?</p>
+    <br>
+    <button class="buttonplay" onclick="console.log(window.location); window.location.href = window.location;">Play Again</button>
+  </div>
+  <script type="text/javascript" src="js/exe.js"></script>
+</body>
+
+</html>
