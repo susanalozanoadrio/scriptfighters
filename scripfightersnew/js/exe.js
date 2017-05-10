@@ -13,7 +13,7 @@ function loadGame(btn) {
 
     var max = parseInt(btn.target.getAttribute("data-limit"));
     var randomNumber = Math.round(Math.random() * max) + 0;
-    
+
 
     s("#page-2 input").addEventListener("keypress", function(e) {
         if (e.keyCode == 13) {
@@ -72,10 +72,10 @@ function updateCounter() {
 
 function saveInput(input) {
     if (input) {
-        if (s(".tries span").innerHTML != "0") {
-            s(".used span").innerHTML = s(".used span").innerHTML + ", " + input;
+        if (".tries span").innerHTML != "0") {
+            (".used span").innerHTML = (".used span").innerHTML + ", " + input;
         } else {
-            s(".used span").innerHTML = input;
+            (".used span").innerHTML = input;
         }
     }
 }
