@@ -13,7 +13,7 @@ function loadGame(btn) {
 
     var max = parseInt(btn.target.getAttribute("data-limit"));
     var randomNumber = Math.round(Math.random() * max) + 0;
-    s("#page-2 h2 span").innerHTML = max;
+    
 
     s("#page-2 input").addEventListener("keypress", function(e) {
         if (e.keyCode == 13) {
